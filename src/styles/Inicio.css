@@ -1,0 +1,21 @@
+.container-init{
+    text-align: center;
+    background-image: url(https://www.necochea.gov.ar/wp-content/uploads/2020/12/6197706_orig.jpg);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-init{
+    font-size: 70px;
+    color: rgb(231, 219, 205);
+    margin: 0;
+}
+
+.boton-init{
+    border: 2px solid rgb(70, 66, 75);
+    background: rgb(84, 76, 92);
+    padding: 1% 3%;
+    border-radius: 10px;
+}
