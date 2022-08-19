@@ -1,5 +1,5 @@
 import React from 'react'
-
+import '../styles/Carusel.css'
 
 const range=4
 const start=0
@@ -10,10 +10,10 @@ const end= start + range
 
 export default function Carrousel() {
     const items =[
-        {url:"", title:"asd1"},
-        {url:"", title:"asd2"},
-        {url:"", title:"asd3"},
-        {url:"", title:"asd4"},
+        {url:"/logo192.png", title:"asd1"},
+        {url:"/logo192.png", title:"asd2"},
+        {url:"/logo192.png", title:"asd3"},
+        {url:"/logo192.png", title:"asd4"},
         ]
     
     
