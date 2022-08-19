@@ -6,10 +6,9 @@ export default function Home() {
   return (
     <>
     <HomesiteLayout>
-  
-    </HomesiteLayout>
+    <p>asd</p>
     <Carrousel/>
-    
+    </HomesiteLayout>
     </>
   )
 }
