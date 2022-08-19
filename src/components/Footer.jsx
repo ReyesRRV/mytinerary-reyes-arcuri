@@ -9,7 +9,7 @@ export default function Footer() {
       <p className='hover-1'>Mindhub</p>
     </div>
     <div>
-      <a href=""><img src="../" alt="" /></a>
+      <a href=""><img src="" alt="" /></a>
     </div>
     </>
   )
