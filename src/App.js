@@ -1,9 +1,15 @@
-import Inicio from './pages/Inicio'
-import './styles/Inicio.css';
+import Home from './pages/Home';
+import './styles/Home.css';
+import Footer from './components/Footer';
+
+
 
 function App() {
   return(
-    <Inicio />
+    <>
+    <Home />
+    <Footer />
+    </>
   )
 
 }
