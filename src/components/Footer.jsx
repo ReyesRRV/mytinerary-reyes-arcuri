@@ -8,10 +8,9 @@ export default function Footer() {
       <p className='hover-1'>Richard Reyes - Martin Arcuri </p>
       <p className='hover-1'>Mindhub</p>
     </div>
-    
-    <a href=""><div id="facebook"></div></a>
-    <a href="" id='facebook'></a>
-    <a href="" id='facebook'></a>
+    <div>
+      <a href=""><img src="../" alt="" /></a>
+    </div>
     </>
   )
 }

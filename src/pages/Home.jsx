@@ -1,12 +1,15 @@
 import React from 'react';
-
+import HomesiteLayout from '../layouts/HomesiteLayout';
+import Carrousel from '../components/Carrousel';
 
 export default function Home() {
   return (
-    <div className='container-init'>
-        <h1 className='titulo-init'>Amazing Events</h1>
-        <button className='boton-init'>Lest Go!</button>
-    </div>
+    <>
+    <HomesiteLayout>
+  
+    </HomesiteLayout>
+    <Carrousel/>
     
+    </>
   )
 }
