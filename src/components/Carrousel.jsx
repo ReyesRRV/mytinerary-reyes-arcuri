@@ -10,7 +10,7 @@ const end= start + range
 
 export default function Carrousel() {
     const items =[
-        {url:"./logo192.png", title:"asd1"},
+        {url:"", title:"asd1"},
         {url:"", title:"asd2"},
         {url:"", title:"asd3"},
         {url:"", title:"asd4"},
