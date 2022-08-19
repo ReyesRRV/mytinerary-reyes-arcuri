@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './styles/Inicio.css';
 import Inicio from './pages/Inicio'
+import './styles/Inicio.css';
 
 function App() {
   return(
-    <Inicio/>
+    <Inicio />
   )
 
 }

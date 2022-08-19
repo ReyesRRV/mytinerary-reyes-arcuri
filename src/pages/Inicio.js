@@ -6,5 +6,6 @@ export default function Inicio() {
     <div className='container-init'>
         <h1 className='titulo-init'>Amazing Events</h1>
     </div>
+    
   )
 }
