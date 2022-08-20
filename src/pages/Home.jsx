@@ -1,13 +1,7 @@
-import React from 'react';
-import HomesiteLayout from '../layouts/HomesiteLayout';
-import Carrousel from '../components/Carrousel';
+import React from 'react'
 
 export default function Home() {
   return (
-    <>
-    <HomesiteLayout>
-    <Carrousel/>
-    </HomesiteLayout>
-    </>
+    <div>Home</div>
   )
 }

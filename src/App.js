@@ -1,5 +1,5 @@
-import Home from './pages/Home';
-import './styles/Home.css';
+import Welcome from './pages/Welcome';
+import './styles/Welcome.css';
 import Footer from './components/Footer';
 
 
@@ -7,7 +7,9 @@ import Footer from './components/Footer';
 function App() {
   return(
     <>
-    <Home />
+
+    <Welcome />
+    <Footer />
     </>
   )
 
