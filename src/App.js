@@ -1,6 +1,7 @@
 import Welcome from './pages/Welcome';
 import './styles/Welcome.css';
 import Footer from './components/Footer';
+import Carrousel from './components/Carrousel';
 
 
 
@@ -9,6 +10,7 @@ function App() {
     <>
 
     <Welcome />
+    <Carrousel />
     <Footer />
     </>
   )
