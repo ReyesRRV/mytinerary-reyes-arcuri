@@ -1,11 +1,18 @@
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .slide{
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-
+.item img{
+    width: 30vw;
+    height: 40vh;
+}
 .slide{
     background-color: black;
     display: flex;

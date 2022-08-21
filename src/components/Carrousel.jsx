@@ -10,19 +10,19 @@ const end= start + range
 
 export default function Carrousel() {
     const items =[
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
-        {url:"/img/Carousel/ciudad-test.jpg", title:"asd1"},
+        {url:"/img/Carousel/33-Uruguay.jpg", title:"Thirty-three - Uruguay"},
+        {url:"/img/Carousel/angels-USA.jpg", title:"The angels-USA"},
+        {url:"/img/Carousel/blackriver-Argentina.jpg", title:"Black River - Argentina"},
+        {url:"/img/Carousel/DaisyFlower-Venezuela.jpg", title:"DaisyFlower island - Venezuela"},
+        {url:"/img/Carousel/goodAirs-Argentina.jpg", title:"Good Airs - Argentina"},
+        {url:"/img/Carousel/hotwater-mexico.jpg", title:"Hotwater - Mexico"},
+        {url:"/img/Carousel/jump-Argentina.jpg", title:"Jump - Argentina"},
+        {url:"/img/Carousel/montevideo_grande.jpg", title:"Herbvideo - Uruguay"},
+        {url:"/img/Carousel/portCross-Venezuela.jpg", title:"Portcross - Venezuela"},
+        {url:"/img/Carousel/stream-Argentina.jpg", title:"Stream - Argentina"},
+        {url:"/img/Carousel/thePeace-Mexico.jpg", title:"The Peace - Mexico"},
+        {url:"/img/Carousel/TheSilver-Argentina.jpg", title:"The Silver - Argentina"},
+        {url:"/img/Carousel/VineyardFromSea-Chile.jpg", title:"Vineyard fom Sea - Chile"},
         ]
     
     
