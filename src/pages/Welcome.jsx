@@ -14,7 +14,7 @@ export default function Welcome(props) {
       <div className='container-init'>
         <h1 className='titulo-init'>Welcome to <span className='title'>MyTinerary</span></h1>
         <h3>Will you travel?</h3>
-        <a href= "{Home}" className='boton-init'> Lets Go!</a>
+        <a href= "/Home" className='boton-init'> Lets Go!</a>
         {props.childen}
     </div>
     </div>
