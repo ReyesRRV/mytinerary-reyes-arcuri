@@ -3,7 +3,7 @@ import '../styles/Footer.css'
 
 export default function Footer() {
   return (
-    <>
+    <div className='footer-Container'>
     <div className='footer-container'>
       
       <p className='hover-1'>Richard Reyes - Martin Arcuri </p>
@@ -16,6 +16,6 @@ export default function Footer() {
         <a href="#"><img src="/img/social/twitter.svg" alt="" /></a>
       </div>
     </div>
-    </>
+    </div>
   )
 }

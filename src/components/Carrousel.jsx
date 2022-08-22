@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Carusel.css'
 
-const range= 12
+const range= 4
 const start= 0
 const end= start + range
 
@@ -22,7 +22,7 @@ export default function Carrousel() {
         {url:"/img/Carousel/stream-Argentina.jpg", title:"Stream - Argentina"},
         {url:"/img/Carousel/thePeace-Mexico.jpg", title:"The Peace - Mexico"},
         {url:"/img/Carousel/TheSilver-Argentina.jpg", title:"The Silver - Argentina"},
-        {url:"/img/Carousel/VineyardFromSea-Chile.jpg", title:"Vineyard fom Sea - Chile"},
+        {url:"/img/Carousel/VineyardFromSea-Chile.jpg", title:"Vineyard from Sea - Chile"},
         ]
     
     
@@ -35,7 +35,7 @@ export default function Carrousel() {
     )
 
   return (
-    <div>
+    <div className='carousel'>
         <div className='slide'>
             {items.slice(start, end).map(itemView)}
         </div>

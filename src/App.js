@@ -10,7 +10,7 @@ function App() {
     <>
 
     <Welcome />
-    <Carrousel />
+    {/* <Carrousel /> */}
     <Footer />
     </>
   )
