@@ -1,7 +1,7 @@
 import Welcome from './pages/Welcome';
 import './styles/Welcome.css';
 import Footer from './components/Footer';
-import Carrousel from './components/Carrousel';
+import Home from './pages/Home';
 
 
 
@@ -10,7 +10,7 @@ function App() {
     <>
 
     <Welcome />
-    {/* <Carrousel /> */}
+    {/* <Home /> */}
     <Footer />
     </>
   )
