@@ -1,0 +1,26 @@
+.leftArrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+}
+.leftArrow-button {
+    width: 8rem;
+    height: 68.3vh;
+    border: 0px solid rgb(210, 210, 210);
+    border-radius: 8rem 0rem 0rem 8rem;
+    background-color: rgb(210, 210, 210);
+}
+.rightArrow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3vw;
+}
+.rightArrow-button {
+    width: 8rem;
+    height: 68.3vh;
+    border: 0px solid rgb(210, 210, 210);
+    border-radius: 0rem 8rem 8rem 0rem;
+    background-color: rgb(210, 210, 210);
+}
