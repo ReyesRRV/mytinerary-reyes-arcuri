@@ -10,7 +10,7 @@
     justify-content: space-around;
 }
 .item img{
-    width: 100%;
+    width: 18.75em;
     height: 30vh;
 
 }
@@ -30,9 +30,8 @@
     color: white;
     display: flex;
     justify-content: center;
-    /* margin-top: 2rem; */
 }
 img:hover{
     transition: 1s;
-    transform: scale(1.1);
+    transform: scale(105%);
 }
