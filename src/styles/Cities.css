@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.slideCitie{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: black;
+    padding-top: 1rem ;
+}
+
+.slideCitie{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 2rem;
+}
+
+
+
+.citieItem img{
+    width: 30em;
+    height: 30vh;
+}
+
+.citieItem p{
+    display: flex;
+    justify-content: center;
+    color: aliceblue;
+    font-size: large;
+}
+
+
+@media (max-width: 425px){
+    .citieItem img{
+        width: 15em;
+        height: 30vh;
+    }
+}
