@@ -5,7 +5,6 @@ import React from 'react'
 import '../styles/Welcome.css'
 import CallToAction from "../components/Hero";
 
-
 export default function Welcome(props) {
   const buttonText = "Lets go!"
   return (
@@ -19,6 +18,5 @@ export default function Welcome(props) {
         {props.childen}
     </div>
     </div>
-    
   )
 }
