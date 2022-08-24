@@ -6,7 +6,6 @@ import '../styles/Welcome.css'
 import CallToAction from "../components/Hero";
 import Footer from "../components/Footer";
 
-
 export default function Welcome(props) {
   const buttonText = "Lets go!"
   return (
@@ -21,6 +20,5 @@ export default function Welcome(props) {
     </div>
     <Footer/>
     </div>
-    
   )
 }
