@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div> 
       <EventCarousel />
-      {/* <Carrousel /> */}
+      <Carrousel />
     </div>
   )
 }
