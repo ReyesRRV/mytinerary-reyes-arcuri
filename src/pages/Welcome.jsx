@@ -4,6 +4,7 @@ import home from "./Home"
 import React from 'react'
 import '../styles/Welcome.css'
 import CallToAction from "../components/Hero";
+import Footer from "../components/Footer";
 
 
 export default function Welcome(props) {
@@ -18,6 +19,7 @@ export default function Welcome(props) {
         <CallToAction linkTo='Home' buttonText={buttonText}/>
         {props.childen}
     </div>
+    <Footer/>
     </div>
     
   )

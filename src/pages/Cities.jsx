@@ -57,6 +57,7 @@ export default function Cities(props) {
     <div className='slideCitie'>
         {items.slice(start, end).map(itemView)}
     </div>
+    <Footer2/>
     </>
   )
 }
