@@ -1,7 +1,7 @@
 import React from 'react'
 import '../styles/Cities.css'
 import { Link as LinkRouter } from "react-router-dom"
-import Footer from '../components/Footer';
+import Footer2 from '../components/Footer2';
 
 export default function Cities(props) {
     const items = [
@@ -53,10 +53,11 @@ export default function Cities(props) {
     )
 
   return (
+    <>
     <div className='slideCitie'>
         {items.slice(start, end).map(itemView)}
-        {/* <Footer/> */}
     </div>
+    </>
   )
 }
 

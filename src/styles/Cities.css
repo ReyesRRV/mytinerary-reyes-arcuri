@@ -9,8 +9,10 @@
     flex-wrap: wrap;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    background-color: black;
-    padding-top: 1rem ;
+    background: rgb(20,20,22);
+    background: linear-gradient(90deg, rgba(20,20,22,0.8155637254901961) 0%, rgba(7,7,8,0.8379726890756303) 19%, rgba(32,33,47,0.927608543417367) 100%);
+    padding-top: 2rem ;
+    padding-bottom: 2rem;
 }
 
 .slideCitie{
@@ -21,11 +23,10 @@
     gap: 2rem;
 }
 
-
-
 .citieItem img{
     width: 30em;
     height: 30vh;
+    border-radius: 10px;
 }
 
 .citieItem a{
