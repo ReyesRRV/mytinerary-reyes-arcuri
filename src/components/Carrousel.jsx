@@ -13,6 +13,16 @@ import { useEffect, useState } from "react";
   let [intervalId, setIntervalId] = useState();
   let interval = props.interval * 1000;
 
+  useEffect(() => {
+    let id = setInterval(function () {
+        next()
+    }, interval)
+
+    setIntervalId(id)
+
+    return () => clearInterval(id)
+}, [start])
+
   let itemView = (item) => (
     <div className="item">
       <p>{item.title}</p>

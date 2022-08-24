@@ -12,9 +12,9 @@
 .item img{
     width: 18.75em;
     height: 30vh;
-
 }
 .slide{
+    height: 68.3vh;
     width: 50%;
     background-color: rgba(0, 0, 0, 0.573);
     display: flex;
