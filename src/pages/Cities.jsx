@@ -44,7 +44,7 @@ export default function Cities(props) {
     const itemView = (item) =>(
         <div className='citieItem'>
             <img src={item.url}/>
-            <p>{item.title}</p>
+            <a href="">{item.title}</a>
         </div>
     )
 
