@@ -1,12 +1,15 @@
-import Welcome from "./pages/Welcome";
-import "./styles/Welcome.css";
-import Footer from "./components/Footer";
-import Home from "./pages/Home";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Welcome from './pages/Welcome';
+import './styles/Welcome.css';
+import Footer from './components/Footer';
+import Home from './pages/Home';
+import Cities from './pages/Cities';
+import Places from './components/Places'
 
 function App() {
   return (
     <>
+
       <BrowserRouter>
         <Routes>
           <Route path="/Welcome" element={<Welcome />} />
@@ -14,6 +17,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Footer />
+
     </>
   );
 }
