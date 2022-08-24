@@ -1,5 +1,7 @@
 import React from 'react'
 import '../styles/Cities.css'
+import { Link as LinkRouter } from "react-router-dom"
+import Footer from '../components/Footer';
 
 export default function Cities(props) {
     const items = [
@@ -42,15 +44,18 @@ export default function Cities(props) {
     const end = start + range
 
     const itemView = (item) =>(
+      
         <div className='citieItem'>
             <img src={item.url}/>
             <a href="">{item.title}</a>
+            {/* <LinkRouter to={linkTo} className="boton-init">{item.tittle}</LinkRouter> */}
         </div>
     )
 
   return (
     <div className='slideCitie'>
         {items.slice(start, end).map(itemView)}
+        {/* <Footer/> */}
     </div>
   )
 }
