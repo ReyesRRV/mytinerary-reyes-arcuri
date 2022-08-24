@@ -5,11 +5,13 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import Cities from './pages/Cities';
 import Places from './components/Places'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
     <>
 
+        
       <BrowserRouter>
         <Routes>
           <Route path="/Welcome" element={<Welcome />} />
