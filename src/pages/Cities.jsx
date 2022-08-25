@@ -46,7 +46,7 @@ export default function Cities(props) {
 
     const itemView = (item) =>(
       
-        <div className='citieItem'>
+        <div className='citieItem' key={item.title}>
             <img src={item.url}/>
             <a href="">{item.title}</a>
             {/* <LinkRouter to={linkTo} className="boton-init">{item.tittle}</LinkRouter> */}
@@ -57,9 +57,9 @@ export default function Cities(props) {
     <>
     <Header/>
     <div className='containerCit'>
-    <video className='videoCarousel' src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+    <video className='videoCarousel' src="/Welcome2.mp4" autoPlay muted loop >
       </video>
-      <div className='slideCitie'>
+      <div  className='slideCitie'>
           {items.slice(start, end).map(itemView)}
       </div>
     </div>
