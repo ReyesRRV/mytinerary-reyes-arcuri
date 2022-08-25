@@ -15,7 +15,7 @@ function App() {
           <Route path="/Welcome" element={<Welcome />} />
           <Route path="/Cities" element={<Cities />} />
           <Route path="/" element={<Home />} />
-          <Route path='/UnderConstriction' element={<UnderConstriction />}/>
+          <Route path='*' element={<UnderConstriction />}/>
         </Routes>
       </BrowserRouter>
     </>
