@@ -4,12 +4,11 @@ import EventCarousel from "../components/Places";
 import Header from "../components/Header";
 import Footer2 from '../components/Footer2'
 
-export default function Home() {
+export default function Index() {
   return (
     <>
     <div>
-      <Header />
-      <EventCarousel />
+            <EventCarousel />
       <Footer2/>
     </div>
     </>

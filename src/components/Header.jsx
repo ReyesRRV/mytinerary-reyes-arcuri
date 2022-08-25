@@ -3,7 +3,7 @@ import { useHistory } from "react-router-dom";
 import "../styles/Header.css";
 import ReactDOM from "react-dom/client";
 import { useState } from "react";
-
+import { Link as LinkRouter } from "react-router-dom";
 
 
 
@@ -20,29 +20,29 @@ export default function Header() {
       <nav className="nav">
         <div className="navcontainer">
           <div className="logo">
-            <a href="/Welcome">
+            <LinkRouter to="/Welcome">
               <img src="/img/MyTineraryLogo.png" alt="" />{" "}
-            </a>
+            </LinkRouter>
           </div>
-          <div id="mainListDiv" className="main_list">
+          <div id="mainListDiv" className={ switchToggled ? "main_list show_list" : "main_list"} onClick={ToggleSwitch}>
             <ul className="navlinks">
               <li>
-                <a href="/">Home</a>
+                <LinkRouter to="/">Home</LinkRouter>
               </li>
               <li>
-                <a href="/Cities">Cities</a>
+                <LinkRouter to="/Cities">Cities</LinkRouter>
               </li>
               <li>
-                <a href="*">New city </a>
+                <LinkRouter to="*">New city </LinkRouter>
               </li>
               <div className="user">
-                <a href="/User">
-                  <img src="/img/usuario.png" alt="" />{" "}
-                </a>
+                <LinkRouter to="/User">
+                  <img src="/img/user.png" alt="User icon" />
+                </LinkRouter>
               </div>
             </ul>
           </div>
-          <span className="navTrigger" onClick={ToggleSwitch} >
+          <span className={ switchToggled ? "navTrigger active" : "navTrigger"} onClick={ToggleSwitch} >
             <i></i>
             <i></i>
             <i></i>

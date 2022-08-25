@@ -10,6 +10,7 @@ body {
         display: flex;
         justify-content: space-around;
          background-color: rgba(0, 0, 0, 0.767);
+         
     }
 /*-- Inspiration taken from abdo steif -->
 /* --> https://codepen.io/abdosteif/pen/bRoyMb?editors=1100*/
@@ -114,8 +115,7 @@ body {
     }
     .nav div.show_list {
         height: auto;
-        /* display: none; */
-        
+        transition: 10s;
     }
     .nav div.main_list ul {
         flex-direction: column;
@@ -124,9 +124,10 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
-        /*same background color of navbar*/
-        background-position: center top;
+        background-color: rgba(17, 17, 17, 0.507);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .nav div.main_list ul li {
         width: 100%;
@@ -330,14 +331,4 @@ height: 4rem;
     100% {
         transform: translateY(-9px) rotate(135deg);
     }
-}
-.affix {
-    padding: 0;
-    background-color: #111;
-}
-
-@media all and (max-width:700px){
-	.myP {
-		padding:2%;
-	}
 }
