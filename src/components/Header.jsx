@@ -1,8 +1,7 @@
 import React from "react";
 import { useHistory } from "react-router-dom";
 import "../styles/Header.css";
-import ReactDOM from 'react-dom/client';
-
+import ReactDOM from "react-dom/client";
 
 export default function Header() {
   return (
@@ -14,20 +13,25 @@ export default function Header() {
               <img src="/img/MyTineraryLogo.png" alt="" />{" "}
             </a>
           </div>
-          <div id="mainListDiv" className="main_list show_list">
+          <div id="mainListDiv" className="main_list">
             <ul className="navlinks">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="#">Cities</a>
+                <a href="/Cities">Cities</a>
               </li>
               <li>
-                <a href="#">New city </a>
+                <a href="*">New city </a>
               </li>
+            <div className="user">
+              <a href="/User">
+                <img src="/img/usuario.png" alt="" />{" "}
+              </a>
+            </div>
             </ul>
           </div>
-          <span class="navTrigger active" onClick={test}>
+          <span class="navTrigger" onClick={test}>
             <i></i>
             <i></i>
             <i></i>
@@ -48,9 +52,9 @@ window.scroll(function () {
 });
 
 function test() {
-//   this.classList.toggle("active");
-// this.addActiveClass
+  //   this.classList.toggle("active");
+  // this.addActiveClass
   console.log("Clicked menu");
-//   document.getElementById("mainListDiv").classList.toggle("show_list");
-//   document.getElementById("mainListDiv").fadeIn();
-};
+  //   document.getElementById("mainListDiv").classList.toggle("show_list");
+  //   document.getElementById("mainListDiv").fadeIn();
+}

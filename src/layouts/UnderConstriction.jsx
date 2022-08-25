@@ -8,7 +8,7 @@ export default function UnderConstriction() {
     <>
       <div className='contenedorUnder'>
         <h4>Not fund or under contruction`s page!</h4>
-        <CallToAction linkTo='Home' buttonText={buttonText}/>
+        <CallToAction linkTo='/' buttonText={buttonText}/>
       </div>
     </>
   )
