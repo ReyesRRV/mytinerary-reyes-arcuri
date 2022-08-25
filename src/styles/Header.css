@@ -8,7 +8,7 @@ body {
 }
 .navcontainer{ 
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
          background-color: rgba(0, 0, 0, 0.767);
     }
 /*-- Inspiration taken from abdo steif -->
@@ -114,7 +114,8 @@ body {
     }
     .nav div.show_list {
         height: auto;
-        display: none;
+        /* display: none; */
+        
     }
     .nav div.main_list ul {
         flex-direction: column;
@@ -152,7 +153,7 @@ body {
     margin: auto;
     position: absolute;
     right: 30px;
-    top: 9%;
+    top: 47%;
     bottom: 0;
 }
 .user img{

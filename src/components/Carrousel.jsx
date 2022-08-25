@@ -49,11 +49,17 @@ import { useEffect, useState } from "react";
     }
   }
   return (
-    <div className="carousel">
-      <Arrow icon={"<"} click={previous} />
-      <div className="slide">{items.slice(start, end).map(itemView)}</div>
-      <Arrow2 icon={">"} click={next} />
+    <>
+    <div className="carrouselContainer">
+        <video  className="videoCarousel" src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+          </video>
+        <div className="carousel">
+          <Arrow icon={"<"} click={previous} />
+          <div className="slide">{items.slice(start, end).map(itemView)}</div>
+          <Arrow2 icon={">"} click={next} />
+        </div>
     </div>
+    </>
   );
 }
 

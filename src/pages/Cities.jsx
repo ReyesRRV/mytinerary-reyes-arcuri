@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/Cities.css'
 import { Link as LinkRouter } from "react-router-dom"
 import Footer2 from '../components/Footer2';
+import Header from '../components/Header';
 
 export default function Cities(props) {
     const items = [
@@ -54,8 +55,13 @@ export default function Cities(props) {
 
   return (
     <>
-    <div className='slideCitie'>
-        {items.slice(start, end).map(itemView)}
+    <Header/>
+    <div className='containerCit'>
+    <video className='videoCarousel' src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+      </video>
+      <div className='slideCitie'>
+          {items.slice(start, end).map(itemView)}
+      </div>
     </div>
     <Footer2/>
     </>
