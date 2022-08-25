@@ -7,5 +7,11 @@
 }
 
 .contenedorUnder img{
-    width: 44rem;
+    width: 24rem;
+    height: 69vh;
+}
+
+.buttonBack{
+    background-color: unset;
+    border: unset;
 }
