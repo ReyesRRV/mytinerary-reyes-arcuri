@@ -20,6 +20,9 @@
     justify-content: space-around;
     width: 70%;
     gap: 2rem;
+
+    /* position: absolute;
+    top: 0%; */
 }
 
 .citieItem img{
@@ -47,3 +50,21 @@
 a:hover{
     color: aquamarine;
 }
+
+.containerCit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+
+.videoCarousel{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 30%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }

@@ -4,6 +4,5 @@
     justify-content: center;
     flex-direction: column;
     padding-top: 10rem;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,0.8155637254901961) 20%, rgba(60,60,82,0.8379726890756303) 50%, rgba(32,33,47,0.927608543417367) 83%);
 }
+

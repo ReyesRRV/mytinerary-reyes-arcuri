@@ -15,16 +15,17 @@
 }
 .slide{
     height: 68.3vh;
-    width: 50%;
+    width: 75%;
     background-color: rgba(0, 0, 0, 0.573);
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
-    margin-bottom: 1rem;
 }
 .carousel{
     display: flex;
     justify-content: center;
+    position: absolute;
+    top: 15%;
 }
 .item p{
     color: white;
@@ -35,3 +36,10 @@ img:hover{
     transition: 1s;
     transform: scale(105%);
 }
+
+.videoCarousel{
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 50%;
+  }

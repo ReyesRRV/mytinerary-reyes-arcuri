@@ -57,6 +57,8 @@ export default function Cities(props) {
     <>
     <Header/>
     <div className='containerCit'>
+    <video className='videoCarousel' src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+      </video>
       <div className='slideCitie'>
           {items.slice(start, end).map(itemView)}
       </div>

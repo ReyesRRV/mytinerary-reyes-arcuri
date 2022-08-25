@@ -9,9 +9,14 @@ export default function UnderConstriction() {
   return (
     <>
     <Header/>
+    <div>
+    <video className='videoCarousel' src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+      </video>
       <div className='contenedorUnder'>
         <h4>Not fund or under contruction`s page!</h4>
         <CallToAction linkTo='/' buttonText={buttonText}/>
+        <img src="/img/orcoConstruyendo2.png" alt="" />
+      </div>
       </div>
       <Footer2/>
     </>
