@@ -3,6 +3,9 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 10rem;
+    padding-top: 5rem;
 }
 
+.contenedorUnder img{
+    width: 44rem;
+}

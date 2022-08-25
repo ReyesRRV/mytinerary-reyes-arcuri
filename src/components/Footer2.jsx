@@ -4,6 +4,7 @@ import CallToAction from '../components/Hero'
 
 export default function Footer2() {
   let buttonText= "Back To Up!"
+ const thisYear = new Date().getFullYear 
   return (
     <div className='footer2-container'>
       
@@ -14,8 +15,9 @@ export default function Footer2() {
         <a href="#"><img src="/img/social/twitter.svg" alt="" /></a>
       </div>
       <CallToAction linkTo='/' buttonText={buttonText}/>
+      <p className='hover-1'> {thisYear} </p>
+      <p className='hover-1'> navegacion </p>
       <p className='hover-1'>TrollTeam || COHORT 32</p>
-      
     </div>
   )
 }

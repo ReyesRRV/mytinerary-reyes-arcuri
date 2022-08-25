@@ -15,7 +15,7 @@ export default function UnderConstriction() {
       <div className='contenedorUnder'>
         <h4>Not fund or under contruction`s page!</h4>
         <CallToAction linkTo='/' buttonText={buttonText}/>
-        <img src="/img/orcoConstruyendo2.png" alt="" />
+        <img src="/img/underConstruction.png" alt="" />
       </div>
       </div>
       <Footer2/>
