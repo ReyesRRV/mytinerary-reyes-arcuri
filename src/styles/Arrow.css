@@ -2,25 +2,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3vw;
+    width: 4vw;
 }
 .leftArrow-button {
-    width: 8rem;
-    height: 68.3vh;
+    width: 10rem;
+    height: 10vh;
     border: 0px solid rgb(210, 210, 210);
     border-radius: 8rem 0rem 0rem 8rem;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(173, 9, 9);
+    margin-right: 4rem;
 }
 .rightArrow-box {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 3vw;
+    width: 4vw;
 }
 .rightArrow-button {
-    width: 8rem;
-    height: 68.3vh;
+    width: 10vh;
+    height: 10vh;
     border: 0px solid rgb(210, 210, 210);
     border-radius: 0rem 8rem 8rem 0rem;
-    background-color: rgb(210, 210, 210);
+    background-color: rgb(173, 9, 9);
+    margin-left: 4rem;
 }

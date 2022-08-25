@@ -16,7 +16,7 @@
 .slide{
     height: 68.3vh;
     width: 75%;
-    background-color: rgba(0, 0, 0, 0.573);
+    /* background-color: rgba(0, 0, 0, 0.573); */
     display: flex;
     flex-wrap: wrap;
     margin-top: 1rem;
@@ -28,7 +28,7 @@
     top: 15%;
 }
 .item p{
-    color: white;
+    color: rgb(27, 26, 26);
     display: flex;
     justify-content: center;
 }
@@ -42,4 +42,11 @@ img:hover{
     height: 100vh;
     object-fit: cover;
     opacity: 50%;
+  }
+
+  @media (max-width: 425px){
+    .item img{
+        height: 20rem;
+        width: 15rem;
+    }
   }
