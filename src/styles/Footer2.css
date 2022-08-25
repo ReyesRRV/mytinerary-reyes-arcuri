@@ -8,6 +8,7 @@
   .footer2-container{
     z-index: 10;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     color: azure;

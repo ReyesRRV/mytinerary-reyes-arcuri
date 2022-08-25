@@ -14,18 +14,17 @@
     height: 30vh;
 }
 .slide{
-    height: 68.3vh;
+    /* height: 68.3vh; */
     width: 75%;
     /* background-color: rgba(0, 0, 0, 0.573); */
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1rem;
+    margin-top: 20vh;
 }
 .carousel{
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 15%;
+
 }
 .item p{
     color: rgb(27, 26, 26);

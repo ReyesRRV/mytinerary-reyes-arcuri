@@ -55,7 +55,6 @@ export default function Cities(props) {
 
   return (
     <>
-    <Header/>
     <div className='containerCit'>
     <video className='videoCarousel' src="/Welcome2.mp4" autoPlay muted loop >
       </video>

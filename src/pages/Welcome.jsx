@@ -1,6 +1,5 @@
 import ReactDOM from "react-dom/client";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
-import home from "./Home"
 import React from 'react'
 import '../styles/Welcome.css'
 import CallToAction from "../components/Hero";
