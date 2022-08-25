@@ -6,10 +6,12 @@ import Footer2 from '../components/Footer2'
 
 export default function Home() {
   return (
+    <>
     <div>
       <Header />
       <EventCarousel />
       <Footer2/>
     </div>
+    </>
   );
 }
