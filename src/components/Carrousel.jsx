@@ -24,7 +24,7 @@ import { useEffect, useState } from "react";
 }, [start])
 
   let itemView = (item) => (
-    <div className="item">
+    <div key={item.title}className="item">
       <p>{item.title}</p>
       <img src={item.url} />
     </div>
@@ -51,9 +51,9 @@ import { useEffect, useState } from "react";
   return (
     <>
     <div className="carrouselContainer">
-        <video  className="videoCarousel" src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+        <video  className="videoCarousel" src="/Welcome2.mp4" autoPlay muted loop >
           </video>
-        <div className="carousel">
+        <div className="carousel" >
           <Arrow icon={"<"} click={previous} />
           <div className="slide">{items.slice(start, end).map(itemView)}</div>
           <Arrow2 icon={">"} click={next} />

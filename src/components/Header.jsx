@@ -4,18 +4,17 @@ import "../styles/Header.css";
 import ReactDOM from "react-dom/client";
 import { useState } from "react";
 
-// const ToggleSwitch = () => {
-//   const [switchToggled, setSwitchToggled] = useState(false)
-//   switchToggled ? setSwitchToggled(false) : setSwitchToggled(true)
-//   console.log(switchToggled)
-// }
-
 
 
 
 
 
 export default function Header() {
+  const [switchToggled, setSwitchToggled] = useState(false)
+  const ToggleSwitch = () => {
+    switchToggled ? setSwitchToggled(false) : setSwitchToggled(true)
+    console.log(switchToggled)
+  }
   return (
     <>
       <nav className="nav">
@@ -43,7 +42,7 @@ export default function Header() {
               </div>
             </ul>
           </div>
-          <span class="navTrigger" >
+          <span className="navTrigger" onClick={ToggleSwitch} >
             <i></i>
             <i></i>
             <i></i>
@@ -54,14 +53,15 @@ export default function Header() {
   );
 }
 
+
 function Clicked (){
-
-    //   this.classList.toggle("active");
-    // this.addActiveClass
-    console.log("Clicked menu");
-    //   document.getElementById("mainListDiv").classList.toggle("show_list");
-    //   document.getElementById("mainListDiv").fadeIn();
-
+  
+  //   this.classList.toggle("active");
+  // this.addActiveClass
+  console.log("Clicked menu");
+  //   document.getElementById("mainListDiv").classList.toggle("show_list");
+  //   document.getElementById("mainListDiv").fadeIn();
+  
 
 
     

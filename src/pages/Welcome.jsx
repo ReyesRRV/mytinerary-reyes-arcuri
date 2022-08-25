@@ -10,7 +10,7 @@ export default function Welcome(props) {
   const buttonText = "Lets go!"
   return (
     <div className='container'>
-      <video src="/Welcome2.mp4" autoplay="true" muted="true" loop="true" >
+      <video src="/Welcome2.mp4" autoPlay muted loop >
       </video>
       <div className='container-init'>
         <h1 className='titulo-init'>Welcome to <span className='title'>MyTinerary</span></h1>
