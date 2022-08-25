@@ -19,7 +19,6 @@ export default function UnderConstriction() {
       </div>
       </div>
       <Footer2/>
-      </div>
     </>
   )
 }
