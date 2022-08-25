@@ -15,7 +15,7 @@ export default function Welcome(props) {
       <div className='container-init'>
         <h1 className='titulo-init'>Welcome to <span className='title'>MyTinerary</span></h1>
         <h3>Will you travel?</h3>
-        <CallToAction linkTo='Home' buttonText={buttonText}/>
+        <CallToAction linkTo='/' buttonText={buttonText}/>
         {props.childen}
     </div>
     <Footer/>
