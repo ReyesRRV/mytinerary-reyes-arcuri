@@ -1,6 +1,19 @@
 import React from "react";
 import "../styles/Footer2.css";
 import CallToAction from "../components/Hero";
+import { Link as LinkRouter } from "react-router-dom";
+
+const linksNav = [
+  { name: "Home", to: "/"},
+  { name: "Cities", to: "/cities"},
+  { name: "New City", to: "/newcity"},
+];
+
+const linkPage = (page) => (
+  <LinkRouter className="hRouter" key={page.name} to={page.to}>
+    {page.name} 
+  </LinkRouter>
+);
 
 export default function Footer2() {
   let buttonText = "Back To Up!";
@@ -21,9 +34,12 @@ export default function Footer2() {
           <img src="/img/social/twitter.svg" alt="" />
         </a>
       </div>
-      <p className="hover-1"> {thisYear} </p>
-      <p className="hover-1"> navegacion </p>
+      <ul className="navFooter">
+
+      <li > {linksNav.map(linkPage)}</li>
+      </ul>
       <p className="hover-1">TrollTeam || COHORT 32</p>
+      <p className="date"> {thisYear} </p>
       <button
         onClick={() => {
           window.scrollTo({

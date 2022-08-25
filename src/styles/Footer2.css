@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none
   }
 
 
@@ -16,4 +17,13 @@
     height: 12vh;
     background: rgb(20,20,22);
     background: linear-gradient(90deg, rgba(20,20,22,1) 2%, rgba(9,9,13,0.8379726890756303) 62%, rgba(32,33,47,1) 100%);
+  }
+
+
+
+  .navFooter a{
+    color: white;
+
+    
+    padding: 0.5rem;
   }
