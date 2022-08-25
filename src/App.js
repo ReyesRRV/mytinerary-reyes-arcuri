@@ -11,7 +11,8 @@ import Header from './components/Header';
 function App() {
   return (
     <>
-    <Header />
+    <Header/>
+
       <BrowserRouter>
         <Routes>
           <Route path="/Welcome" element={<Welcome />} />
