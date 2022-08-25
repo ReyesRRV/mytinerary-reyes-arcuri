@@ -7,8 +7,6 @@
 .slideCitie{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
     background: rgb(0,0,0);
     background: linear-gradient(90deg, rgba(0,0,0,0.8155637254901961) 20%, rgba(60,60,82,0.8379726890756303) 50%, rgba(32,33,47,0.927608543417367) 83%);
     padding-top: 2rem ;
@@ -16,10 +14,11 @@
 }
 
 .slideCitie{
+    padding-top: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    width: 100%;
+    width: 70%;
     gap: 2rem;
 }
 
