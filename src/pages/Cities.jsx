@@ -2,7 +2,8 @@ import React from 'react'
 import '../styles/Cities.css'
 import { Link as LinkRouter } from "react-router-dom"
 import Footer2 from '../components/Footer2';
-import Header from '../components/Header';
+import ScrollToTop from '../components/ScrollToTop';
+
 
 export default function Cities(props) {
     const items = [
@@ -62,6 +63,7 @@ export default function Cities(props) {
           {items.slice(start, end).map(itemView)}
       </div>
     </div>
+    <ScrollToTop/>
     <Footer2/>
     </>
   )

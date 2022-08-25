@@ -36,6 +36,9 @@ body {
     height: auto;
     padding-left: 3rem;
 }
+.user img{
+    z-index: 100;
+}
 
 .nav div.logo a {
     text-decoration: none;

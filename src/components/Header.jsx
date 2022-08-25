@@ -39,8 +39,8 @@ export default function Header() {
             <ul className="navlinks">
               <li> {linksNav.map(linkPage)}
               
-                <LinkRouter to="/User">
-                  <img src="/img/user.png" alt="User icon" />
+                <LinkRouter className="user" to="/User">
+                  <img  src="/img/user.png" alt="User icon" />
                 </LinkRouter>
               
               </li>
