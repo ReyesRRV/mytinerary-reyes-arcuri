@@ -49,8 +49,9 @@ export default function Cities(props) {
       
         <div className='citieItem' key={item.title}>
             <img src={item.url}/>
-            <a href="">{item.title}</a>
-            {/* <LinkRouter to={linkTo} className="boton-init">{item.tittle}</LinkRouter> */}
+            <LinkRouter className="city" to="/UnderConstriction">
+              <a href="">{item.title}</a>
+            </LinkRouter>
         </div>
     )
 
