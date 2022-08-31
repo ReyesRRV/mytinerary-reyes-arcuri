@@ -3,7 +3,7 @@ import '../styles/Cities.css'
 import { Link as LinkRouter } from "react-router-dom"
 import Footer2 from '../components/Footer2';
 import ScrollToTop from '../components/ScrollToTop';
-
+import Formulario from '../components/Formulario';
 
 export default function Cities(props) {
     const items = [
