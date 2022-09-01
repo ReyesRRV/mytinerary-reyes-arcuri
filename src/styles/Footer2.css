@@ -27,3 +27,11 @@
     
     padding: 0.5rem;
   }
+
+  .buttonGoTop{
+    border-radius: 10px;
+    height: 2rem;
+    width: 6rem;
+    opacity: 50%;
+    color: black;
+  }

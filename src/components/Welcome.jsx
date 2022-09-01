@@ -2,8 +2,8 @@ import ReactDOM from "react-dom/client";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 import React from 'react'
 import '../styles/Welcome.css'
-import CallToAction from "../components/Hero";
-import Footer from "../components/Footer";
+import CallToAction from "./Hero";
+import Footer from "./Footer";
 
 export default function Welcome(props) {
   const buttonText = "Lets go!"
@@ -14,8 +14,17 @@ export default function Welcome(props) {
       <div className='container-init'>
         <h1 className='titulo-init'>Welcome to <span className='title'>MyTinerary</span></h1>
         <h3>Will you travel?</h3>
-        <CallToAction linkTo='/' buttonText={buttonText}/>
-        {props.childen}
+        <button
+        onClick={() => {
+          window.scrollTo({
+            top: 1000,
+            behavior: "smooth",
+          });
+        }}
+        className="buttonGoBot"
+      >
+        Lets go!
+      </button>
     </div>
     <Footer/>
     </div>

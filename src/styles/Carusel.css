@@ -36,16 +36,22 @@ img:hover{
     transform: scale(105%);
 }
 
-.videoCarousel{
+/* .videoCarousel{
     width: 100vw;
     height: 100vh;
     object-fit: cover;
     opacity: 50%;
-  }
+  } */
 
   @media (max-width: 425px){
     .item img{
         height: 20rem;
         width: 15rem;
     }
+  }
+
+
+  .carrouselContainer{
+    margin-top: 100vh;
+    z-index: 5;
   }
