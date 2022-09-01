@@ -7,38 +7,38 @@ import Formulario from '../components/Formulario';
 
 export default function Cities(props) {
     const items = [
-        { url: "/img/Carousel/33-Uruguay.jpg", title: "Thirty-three - Uruguay" },
+        { url: "/img/Carousel/33-Uruguay.jpg", title: "Thirty-three - Uruguay", _id:"1" },
         {
           url: "/img/Carousel/blackriver-Argentina.jpg",
-          title: "Black River - Argentina",
+          title: "Black River - Argentina",_id:"2"
         },
         {
           url: "/img/Carousel/landFire.jpg",
-          title: "Land of Fire - Argentina",
+          title: "Land of Fire - Argentina",_id:"3"
         },
         {
           url: "/img/Carousel/goodAirs-Argentina.jpg",
-          title: "Good Airs - Argentina",
+          title: "Good Airs - Argentina",_id:"4"
         },
-        { url: "/img/Carousel/hotwater-mexico.jpg", title: "Hotwater - Mexico" },
-        { url: "/img/Carousel/jump-Argentina.jpg", title: "Jump - Argentina" },
+        { url: "/img/Carousel/hotwater-mexico.jpg", title: "Hotwater - Mexico",_id:"5" },
+        { url: "/img/Carousel/jump-Argentina.jpg", title: "Jump - Argentina", _id:"6"},
         {
           url: "/img/Carousel/montevideo_grande.jpg",
-          title: "Hillvideo - Uruguay",
+          title: "Hillvideo - Uruguay",_id:"7"
         },
         {
           url: "/img/Carousel/portCross-Venezuela.jpg",
-          title: "Portcross - Venezuela",
+          title: "Portcross - Venezuela",_id:"8"
         },
-        { url: "/img/Carousel/stream-Argentina.jpg", title: "Stream - Argentina" },
-        { url: "/img/Carousel/thePeace-Mexico.jpg", title: "The Peace - Mexico" },
+        { url: "/img/Carousel/stream-Argentina.jpg", title: "Stream - Argentina",_id:"9" },
+        { url: "/img/Carousel/thePeace-Mexico.jpg", title: "The Peace - Mexico",_id:"10" },
         {
           url: "/img/Carousel/TheSilver-Argentina.jpg",
-          title: "The Silver - Argentina",
+          title: "The Silver - Argentina",_id:"11"
         },
         {
           url: "/img/Carousel/VineyardFromSea-Chile.jpg",
-          title: "Vineyard from Sea - Chile",
+          title: "Vineyard from Sea - Chile",_id:"12"
         },
       ];
     const range = 12
@@ -49,7 +49,7 @@ export default function Cities(props) {
       
         <div className='citieItem' key={item.title}>
             <img src={item.url}/>
-            <LinkRouter className="city" to="/UnderConstriction">
+            <LinkRouter className="city" to={item._id}>
               <a href="">{item.title}</a>
             </LinkRouter>
         </div>

@@ -6,11 +6,11 @@ import '../styles/Formulario.css'
 
 export default function Formulario() {
   const items =[
-    {value: "City", type: "text", placeholder:"Example: Berlin"},
-    {value: "County", type: "text",placeholder:"Example: Germany"},
+    {value: "City", type: "text", placeholder:" Berlin"},
+    {value: "County", type: "text",placeholder:" Germany"},
     {value: "Photo", type: "text",placeholder:"Insert URL"},
     {value: "Population",type: "number",placeholder:"Approximate Number"},
-    {value: "Fundation",type: "date",placeholder:"Example: 13/01/01"},
+    {value: "Fundation",type:"date",placeholder:"13/01/01"},
     {value: "Details",type: "text",placeholder:"Description"},
   ]
   

@@ -47,6 +47,7 @@ export default function Footer2() {
             behavior: "smooth",
           });
         }}
+        className="buttonGoTop"
       >
         Go top
       </button>

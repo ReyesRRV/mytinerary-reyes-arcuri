@@ -15,3 +15,11 @@
     background-color: unset;
     border: unset;
 }
+
+
+@media (max-width: 425px){
+.contenedorUnder img{
+    width: 10rem;
+    height: 35vh;
+}
+}

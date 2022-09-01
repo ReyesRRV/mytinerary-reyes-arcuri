@@ -28,7 +28,7 @@ export default function Header() {
       <nav className="nav">
         <div className="navcontainer">
           <div className="logo">
-            <LinkRouter to="/Welcome">
+            <LinkRouter to="/">
               <img src="/img/MyTineraryLogo.png" alt="" />{" "}
             </LinkRouter>
           </div>
@@ -60,27 +60,3 @@ export default function Header() {
   );
 }
 
-function Clicked() {
-  //   this.classList.toggle("active");
-  // this.addActiveClass
-  console.log("Clicked menu");
-  //   document.getElementById("mainListDiv").classList.toggle("show_list");
-  //   document.getElementById("mainListDiv").fadeIn();
-}
-
-// window.scroll(function () {
-//   if (document.scrollTop() > 50) {
-//     document.getElementByClassName("nav").classList.add("affix");
-//     console.log("OK");
-//   } else {
-//     document.getElementByClassName("nav").classList.remove("affix");
-//   }
-// });
-
-function test() {
-  //   this.classList.toggle("active");
-  // this.addActiveClass
-  console.log("Clicked menu");
-  //   document.getElementById("mainListDiv").classList.toggle("show_list");
-  //   document.getElementById("mainListDiv").fadeIn();
-}

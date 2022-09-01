@@ -26,6 +26,8 @@ video {
   height: 100vh;
   object-fit: cover;
   opacity: 50%;
+  position: fixed;
+  z-index: -1;
 }
 
 .titulo-init {
@@ -40,4 +42,11 @@ video {
 
 h3{
     text-shadow: 0px 0px 5px white;
+}
+
+.buttonGoBot{
+  border-radius: 10px;
+    height: 2rem;
+    width: 6rem;
+    color: black;
 }
