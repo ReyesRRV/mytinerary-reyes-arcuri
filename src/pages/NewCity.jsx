@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer2 from '../components/Footer2'
-import Formulario from '../components/Formulario'
+import Form from '../components/Form'
 import Header from '../components/Header'
 
 export default function NewCity() {
@@ -9,8 +9,8 @@ export default function NewCity() {
     <div>
     <video className='videoCarousel' src="/Welcome2.mp4" autoPlay muted loop >
       </video>
-    <Header/>
-    <Formulario/>
+
+    <Form/>
     <Footer2/>
     </div>
     </>

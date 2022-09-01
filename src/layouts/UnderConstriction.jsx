@@ -3,7 +3,7 @@ import '../styles/UnderConstruction.css'
 import Header from '../components/Header'
 import Footer2 from '../components/Footer2'
 import {Link, Routes, Route, useNavigate} from 'react-router-dom';
-import Formulario from '../components/Formulario';
+import Form from '../components/Form';
 
 export default function UnderConstriction() {
   let buttonText= "Back"
@@ -22,7 +22,6 @@ export default function UnderConstriction() {
         
       </div>
       </div>
-      {/* <Formulario/> */}
       <Footer2/>
     </>
   )

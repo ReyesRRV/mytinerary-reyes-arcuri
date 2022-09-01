@@ -20,7 +20,7 @@ export default function Cities(props) {
       
         <div className='citieItem' key={item.city}>
             <img src={item.image}/>
-            <LinkRouter className="city" to={item._id}>
+            <LinkRouter className="city" to= {`/Details/${item._id}`} >
               <a href="">{item.city}</a>
             </LinkRouter>
         </div>

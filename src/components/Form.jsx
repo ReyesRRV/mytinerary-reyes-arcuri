@@ -1,10 +1,11 @@
 import React from 'react'
 import UseForm from './hook/UseForm'
-import '../styles/Formulario.css'
+import '../styles/Form.css'
+import { Link as LinkRouter } from "react-router-dom";
 
 
 
-export default function Formulario() {
+export default function Form() {
   const items =[
     {value: "City: ", type: "text", placeholder:" Berlin"},
     {value: "County: ", type: "text",placeholder:" Germany"},
@@ -16,10 +17,14 @@ export default function Formulario() {
   
   return (
     <div className='containerFrom'>
-      <h1>Form New City</h1>
+      <h1>New City</h1>
       <form className='formNewCity' action="">
         <UseForm data={items} />
+        <div className='sendEdit'>
         <button id='send' type='summit' className='buttonInp'>Send City</button>
+        <LinkRouter className="EditCity" to="/EditCity"><img  src="/img/edit.png" alt="EditCity icon" />
+                </LinkRouter>
+        </div>
       </form>
     </div>
   )
