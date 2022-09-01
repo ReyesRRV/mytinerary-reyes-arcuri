@@ -3,12 +3,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 5rem;
+    flex-grow: 1;
+    padding-top: 5rem;  
+    height: 88vh;
 }
 
 .contenedorUnder img{
     width: 24rem;
-    height: 69vh;
+    height: 14.2rem;
 }
 
 .buttonBack{

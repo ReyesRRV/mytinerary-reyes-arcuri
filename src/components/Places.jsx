@@ -1,41 +1,16 @@
 import Carousel from "./Carrousel";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 function EventCarousel() {
-  const items = [
-    { url: "/img/Carousel/33-Uruguay.jpg", title: "Thirty-three - Uruguay" },
-    {
-      url: "/img/Carousel/blackriver-Argentina.jpg",
-      title: "Black River - Argentina",
-    },
-    {
-      url: "/img/Carousel/landFire.jpg",
-      title: "Land of Fire - Argentina",
-    },
-    {
-      url: "/img/Carousel/goodAirs-Argentina.jpg",
-      title: "Good Airs - Argentina",
-    },
-    { url: "/img/Carousel/hotwater-mexico.jpg", title: "Hotwater - Mexico" },
-    { url: "/img/Carousel/jump-Argentina.jpg", title: "Jump - Argentina" },
-    {
-      url: "/img/Carousel/montevideo_grande.jpg",
-      title: "Hillvideo - Uruguay",
-    },
-    {
-      url: "/img/Carousel/portCross-Venezuela.jpg",
-      title: "Portcross - Venezuela",
-    },
-    { url: "/img/Carousel/stream-Argentina.jpg", title: "Stream - Argentina" },
-    { url: "/img/Carousel/thePeace-Mexico.jpg", title: "The Peace - Mexico" },
-    {
-      url: "/img/Carousel/TheSilver-Argentina.jpg",
-      title: "The Silver - Argentina",
-    },
-    {
-      url: "/img/Carousel/VineyardFromSea-Chile.jpg",
-      title: "Vineyard from Sea - Chile",
-    },
-  ];
-  return <Carousel data={items} range={4} slides={3} interval={5} />;
+  const [items, setItems] = useState([])
+    
+  useEffect(()=>{
+    axios.get('http://localhost:4000/cities/')
+    .then(response => setItems(response.data))
+
+  },[])
+
+  return console.log (items), <Carousel data={items} range={4} slides={3} interval={15} />;
 }
 export default EventCarousel;

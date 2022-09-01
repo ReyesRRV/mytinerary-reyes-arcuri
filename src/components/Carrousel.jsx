@@ -24,9 +24,9 @@ import { useEffect, useState } from "react";
 }, [start])
 
   let itemView = (item) => (
-    <div key={item.title}className="item">
-      <p>{item.title}</p>
-      <img src={item.url} />
+    <div key={item.city}className="item">
+      <p>{item.city}</p>
+      <img src={item.image} />
     </div>
   );
   function previous() {
