@@ -2,7 +2,6 @@ import React from 'react'
 import '../styles/Cities.css'
 import { Link as LinkRouter } from "react-router-dom"
 import Footer2 from '../components/Footer2';
-import ScrollToTop from '../components/ScrollToTop';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -19,7 +18,7 @@ export default function Cities(props) {
     const itemView = (item) =>(
       
         <div className='citieItem' key={item.city}>
-            <img src={item.image}/>
+            <img src={item.photo}/>
             <LinkRouter className="city" to= {`/Details/${item._id}`} >
               <a href="">{item.city}</a>
             </LinkRouter>
@@ -35,7 +34,6 @@ export default function Cities(props) {
           {items.map(itemView)}
       </div>
     </div>
-    <ScrollToTop/>
     <Footer2/>
     </>
   )
