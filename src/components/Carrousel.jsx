@@ -3,6 +3,8 @@ import "../styles/Carusel.css";
 import Arrow from "./Arrow";
 import Arrow2 from "./Arrow2";
 import { useEffect, useState } from "react";
+import { Link as LinkRouter } from "react-router-dom"
+
 
  function Carousel(props) {
   let items = props.data;
@@ -26,7 +28,9 @@ import { useEffect, useState } from "react";
   let itemView = (item) => (
     <div key={item.city}className="item">
       <p>{item.city}</p>
-      <img src={item.image} />
+      <LinkRouter to= {`/Details/${item._id}`} >
+      <img src={item.photo} />
+            </LinkRouter>
     </div>
   );
   function previous() {
@@ -51,8 +55,6 @@ import { useEffect, useState } from "react";
   return (
     <>
     <div className="carrouselContainer">
-        {/* <video  className="videoCarousel" src="/Welcome2.mp4" autoPlay muted loop >
-          </video> */}
         <div className="carousel" >
           <Arrow icon={<img src="/img/carousel/arrow_back_ios_FILL0_wght500_GRAD0_opsz48.png" alt="" />} click={previous} />
           <div className="slide">{items.slice(start, end).map(itemView)}</div>

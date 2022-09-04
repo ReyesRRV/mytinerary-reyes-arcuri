@@ -18,7 +18,7 @@ export default function Cities(props) {
     const itemView = (item) =>(
       
         <div className='citieItem' key={item.city}>
-            <img src={item.image}/>
+            <img src={item.photo}/>
             <LinkRouter className="city" to= {`/Details/${item._id}`} >
               <a href="">{item.city}</a>
             </LinkRouter>
