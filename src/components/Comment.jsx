@@ -1,4 +1,4 @@
-import '../styles/Itinerary.css'
+// import '../styles/Itinerary.css'
 
 function Comment(props){
     const allCard = props.data
