@@ -5,7 +5,7 @@ import Footer2 from '../components/Footer2';
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-export default function Cities(props) {
+export default function Cities() {
   const [items, setItems] = useState([])
     
   useEffect(()=>{
@@ -13,10 +13,8 @@ export default function Cities(props) {
     .then(response => setItems(response.data))
 
   },[])  
- 
 
     const itemView = (item) =>(
-      
         <div className='citieItem' key={item.city}>
             <img src={item.photo}/>
             <LinkRouter className="city" to= {`/Details/${item._id}`} >
@@ -24,7 +22,6 @@ export default function Cities(props) {
             </LinkRouter>
         </div>
     )
-
   return (
     <>
     <div className='containerCit'>
@@ -38,4 +35,3 @@ export default function Cities(props) {
     </>
   )
 }
-
