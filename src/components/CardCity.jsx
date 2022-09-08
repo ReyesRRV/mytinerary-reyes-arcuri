@@ -2,11 +2,8 @@ import {Link as LinkRouter} from 'react-router-dom'
 import "../styles/Cities.css";
 
 function CardCity(props){
-    const allCard =  
-    // props.data.response ? props.data.response : 
-    props.data
+    const allCard = props.data
     
-
   const itemView = (item) => (
     <div className="citieItem" key={item.city}>
       <img src={item.photo} />

@@ -3,6 +3,7 @@ import "../styles/Cities.css";
 import { useAllQuery } from "../store/CitiesApi";
 import { useRef, useState } from "react";
 import CardCity from '../components/CardCity'
+import Footer2 from '../components/Footer2'
 
 export default function Cities() {
   const [search, setSearch] = useState();
@@ -19,6 +20,7 @@ export default function Cities() {
     isSuccess,
     isFailed,
   } = useAllQuery(searchInput.current ? searchInput.current.value : "");
+  console.log(items);
 
   if (isLoading) {
     console.log("Loading");
@@ -34,6 +36,7 @@ export default function Cities() {
     <div className="card-containter">
         <input onChange={accion}  ref={searchInput}  type="search" className="cities-search" placeholder="What wanna u see?." />
         <CardCity  data={items}  />
+        <Footer2 />
     </div>
 
 )

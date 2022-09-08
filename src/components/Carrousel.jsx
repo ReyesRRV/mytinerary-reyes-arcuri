@@ -57,7 +57,7 @@ import { Link as LinkRouter } from "react-router-dom"
     <div className="carrouselContainer">
         <div className="carousel" >
           <Arrow icon={<img src="/img/carousel/arrow_back_ios_FILL0_wght500_GRAD0_opsz48.png" alt="" />} click={previous} />
-          <div className="slide">{items.slice(start, end).map(itemView)}</div>
+          <div className="slide">{items?.slice(start, end).map(itemView)}</div>
           <Arrow2 icon={<img src="/img/carousel/arrow_forward_ios_FILL0_wght500_GRAD0_opsz48.png" alt="" />} click={next} />
         </div>
     </div>
