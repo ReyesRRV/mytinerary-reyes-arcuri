@@ -1,37 +1,49 @@
-import React from 'react'
-import '../styles/Cities.css'
-import { Link as LinkRouter } from "react-router-dom"
-import Footer2 from '../components/Footer2';
-import axios from "axios";
-import { useEffect, useState } from "react";
+import React from "react";
+import "../styles/Cities.css";
+import { useAllQuery } from "../store/CitiesApi";
+import { useRef, useState } from "react";
+import CardCity from '../components/CardCity'
+import Footer2 from '../components/Footer2'
+import { useNavigate } from 'react-router-dom'
 
 export default function Cities() {
-  const [items, setItems] = useState([])
+  let navigate = useNavigate()
+ 
+  const [search, setSearch] = useState();
+  const searchInput = useRef("");
+  const accion = () => {
+    setSearch(searchInput.current.value);
+    console.log(search)
+  };
+
+  const {
+    data: items,
+    error,
+    isLoading,
+    isSuccess,
+    isFailed,
+  } = useAllQuery(searchInput.current ? searchInput.current.value : "");
+  console.log(items);
+
+  if (isLoading) {
+    console.log("Loading");
+  } else if (isSuccess) {
+    console.log("Load succesfully");
     
-  useEffect(()=>{
-    axios.get('http://localhost:4000/cities/')
-    .then(response => setItems(response.data))
+  } else if (isFailed) {
+    console.log("3");
+    items = [];
+  }
 
-  },[])  
-
-    const itemView = (item) =>(
-        <div className='citieItem' key={item.city}>
-            <img src={item.photo}/>
-            <LinkRouter className="city" to= {`/Details/${item._id}`} >
-              <a href="">{item.city}</a>
-            </LinkRouter>
-        </div>
-    )
-  return (
-    <>
-    <div className='containerCit'>
-    <video className='videoCarousel' src="/Welcome2.mp4" autoPlay muted loop >
-      </video>
-      <div  className='slideCitie'>
-          {items.map(itemView)}
-      </div>
+  return(
+    <div className="card-containter">
+        <input onChange={accion}  ref={searchInput}  type="search" className="cities-search" placeholder="What wanna u see?." />
+        
+        <CardCity  data={items}  />
+      <button className='close-button' onClick={() => navigate(-1)} >Go back papu 😎 </button>
+        <Footer2 />
     </div>
-    <Footer2/>
-    </>
-  )
+
+)
+
 }

@@ -1,23 +1,15 @@
-import {configureStore} from "@reduxjs/toolkit"
-import { activitiesAPI } from "./actions/activitiesAPI"
-// import { citiesAPI } from "./actions/citiesAPI"
-// import { commentsAPI } from "./actions/comentsAPI"
-// import { itinerariesAPI } from "./actions/itinerariesAPI"
+import { configureStore } from "@reduxjs/toolkit";
 
+import citiesApi from "./CitiesApi";
+import carouselApi from "./CarouselApi"
 
-export const store = configureStore({
-    reducer:{
-        cities: citiesAPI,
-        [citiesAPI.reducerPath] : citiesAPI.reducer,
-        itineraries: itinerariesAPI,
-        [itinerariesAPI.reducerPath]: itinerariesAPI.reducer,    
-        comments: commentsAPI,
-        [commentsAPI.reducerPath]: commentsAPI.reducer,
-        },
-        activities: activitiesAPI,
-        [activitiesAPI.reducerPath]: activitiesAPI.reducer,
-        middleware: (getDefaultMiddleware)=> getDefaultMiddleware({
-            inmutableCheck:false,
-            serializableCheck: false,
-        })
+export const  store = configureStore({
+    reducer: {
+        cities : citiesApi,
+        [citiesApi.reducerPath] : citiesApi.reducer,
+   
+        carousel : carouselApi,
+        [carouselApi.reducerPath] : carouselApi.reducer
+    },
 })
+

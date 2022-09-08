@@ -1,16 +1,13 @@
 import Carousel from "./Carrousel";
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useCarouselQuery } from "../store/CarouselApi";
 
 function EventCarousel() {
-  const [items, setItems] = useState([])
-    
-  useEffect(()=>{
-    axios.get('http://localhost:4000/cities/')
-    .then(response => setItems(response.data))
+  
+  let {data : items} = useCarouselQuery()
+  
+  return (
 
-  },[])
-
-  return console.log (items), <Carousel data={items} range={4} slides={3} interval={15} />;
+    console.log (items), <Carousel data={items} range={4} slides={3} interval={15} />
+    )
 }
 export default EventCarousel;

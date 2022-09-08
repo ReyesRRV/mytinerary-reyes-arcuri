@@ -69,3 +69,11 @@ a:hover{
     top: 0;
     z-index: -1;
 }
+.cities-search{
+    position: fixed;
+    top: 50px;
+    left: 30%;
+    right: 30%;
+    z-index: 10;
+    
+}
