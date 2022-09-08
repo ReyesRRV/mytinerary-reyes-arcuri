@@ -1,35 +1,41 @@
-import React from 'react'
-import '../styles/Cities.css'
-import { Link as LinkRouter } from "react-router-dom"
-import Footer2 from '../components/Footer2';
-import { useAllQuery } from '../store/CitiesApi';
+import React from "react";
+import "../styles/Cities.css";
+import { useAllQuery } from "../store/CitiesApi";
+import { useRef, useState } from "react";
+import CardCity from '../components/CardCity'
 
 export default function Cities() {
+  const [search, setSearch] = useState();
+  const searchInput = useRef("");
+  const accion = () => {
+    setSearch(searchInput.current.value);
+    console.log(search)
+  };
+
   const {
-    data : items,
+    data: items,
     error,
     isLoading,
     isSuccess,
-    isFailed} = useAllQuery()
+    isFailed,
+  } = useAllQuery(searchInput.current ? searchInput.current.value : "");
 
-    const itemView = (item) =>(
-        <div className='citieItem' key={item.city}>
-            <img src={item.photo}/>
-            <LinkRouter className="city" to= {`/Details/${item._id}`} >
-              <a href="">{item.city}</a>
-            </LinkRouter>
-        </div>
-    )
-  return (
-    <>
-    <div className='containerCit'>
-    <video className='videoCarousel' src="/Welcome2.mp4" autoPlay muted loop >
-      </video>
-      <div  className='slideCitie'>
-          {items?.map(itemView)}
-      </div>
+  if (isLoading) {
+    console.log("Loading");
+  } else if (isSuccess) {
+    console.log("Load succesfully");
+    
+  } else if (isFailed) {
+    console.log("3");
+    items = [];
+  }
+
+  return(
+    <div className="card-containter">
+        <input onChange={accion}  ref={searchInput}  type="search" className="cities-search" placeholder="What wanna u see?." />
+        <CardCity  data={items}  />
     </div>
-    <Footer2/>
-    </>
-  )
+
+)
+
 }
