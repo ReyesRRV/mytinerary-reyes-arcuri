@@ -2,17 +2,15 @@ import React from 'react'
 import '../styles/Cities.css'
 import { Link as LinkRouter } from "react-router-dom"
 import Footer2 from '../components/Footer2';
-import axios from "axios";
-import { useEffect, useState } from "react";
+import { useAllQuery } from '../store/CitiesApi';
 
 export default function Cities() {
-  const [items, setItems] = useState([])
-    
-  useEffect(()=>{
-    axios.get('http://localhost:4000/cities/')
-    .then(response => setItems(response.data))
-
-  },[])  
+  const {
+    data : items,
+    error,
+    isLoading,
+    isSuccess,
+    isFailed} = useAllQuery()
 
     const itemView = (item) =>(
         <div className='citieItem' key={item.city}>
@@ -28,7 +26,7 @@ export default function Cities() {
     <video className='videoCarousel' src="/Welcome2.mp4" autoPlay muted loop >
       </video>
       <div  className='slideCitie'>
-          {items.map(itemView)}
+          {items?.map(itemView)}
       </div>
     </div>
     <Footer2/>
