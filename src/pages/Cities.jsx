@@ -4,8 +4,11 @@ import { useAllQuery } from "../store/CitiesApi";
 import { useRef, useState } from "react";
 import CardCity from '../components/CardCity'
 import Footer2 from '../components/Footer2'
+import { useNavigate } from 'react-router-dom'
 
 export default function Cities() {
+  let navigate = useNavigate()
+ 
   const [search, setSearch] = useState();
   const searchInput = useRef("");
   const accion = () => {
@@ -35,7 +38,9 @@ export default function Cities() {
   return(
     <div className="card-containter">
         <input onChange={accion}  ref={searchInput}  type="search" className="cities-search" placeholder="What wanna u see?." />
+        
         <CardCity  data={items}  />
+      <button className='close-button' onClick={() => navigate(-1)} >Go back papu 😎 </button>
         <Footer2 />
     </div>
 
