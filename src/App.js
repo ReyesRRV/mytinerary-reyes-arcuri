@@ -19,7 +19,7 @@ function App() {
           <Route path='/NewCity' element={<NewCity />}/>
           <Route path='/cities/:id' element={<Details />}/> 
           <Route path='/EditCity' element={<EditCity />}/>
-          {/* <Route path='*' element={<UnderConstriction />}/> */}
+          <Route path='*' element={<UnderConstriction />}/>
         </Routes>
       </BrowserRouter>
     </>
