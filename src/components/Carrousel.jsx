@@ -28,7 +28,7 @@ import { Link as LinkRouter } from "react-router-dom"
   let itemView = (item) => (
     <div key={item.city}className="item">
       <p>{item.city}</p>
-      <LinkRouter to= {`/Details/${item._id}`} >
+      <LinkRouter to= {`/cities/${item._id}`} >
       <img src={item.photo} />
             </LinkRouter>
     </div>
