@@ -1,5 +1,5 @@
 import React from 'react'
-import UseForm from './hook/UseForm'
+import UseForm from './UseForm'
 import '../styles/Form.css'
 import { Link as LinkRouter } from "react-router-dom";
 
