@@ -5,13 +5,13 @@ export default function SelectCity(props) {
   console.log(allCities);
 
   const itemView = (item) => (
-    <option value={item.city}>{item.city}</option>
+    <option value={item.city}>{item.city} - {item.country}</option>
   )
 
   return (
     <>
       <select name="select">
-        <option value="select">select a city for edit</option>
+        <option value="selectACity" hidden >select a city for edit</option>
         {allCities.map(itemView)}
       </select>
     </>

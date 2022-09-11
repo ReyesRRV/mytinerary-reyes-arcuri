@@ -2,9 +2,9 @@ function UseForm(props) {
   const allInput = props.data;
 
   const FormItem = (item) => (
-    <label className="labelFrom" htmlFor={item.value}>
+    <label className="placeholder" htmlFor={item.value}>
       <input
-        type={item.type}
+        type={item.type} className="inputFloat"
         required
         id={item.value}
         placeholder={item.value}
