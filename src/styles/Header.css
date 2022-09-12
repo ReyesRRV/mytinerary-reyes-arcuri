@@ -28,7 +28,7 @@ body {
     
 }
 .logo img{
-    height: 4rem;
+    height: 3rem;
 }
 .nav div.logo {
     float: left;
@@ -170,7 +170,7 @@ body {
     margin: auto;
     position: absolute;
     right: 30px;
-    top: 47%;
+    top: 17px;
     bottom: 0;
 }
 li img{
